@@ -1,0 +1,76 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #333;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #5f7fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type='text'], input[type='email'], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    button {
+        width: 100%;
+    }
+}
